@@ -176,28 +176,3 @@ for line in model.predict(x_test_vectorized):
 
 
 
-# # when we are running in hacker rank:
-# import fileinput 
-
-# def load_hacker_rank_input():
-#     temp = []  
-    
-#     for f in fileinput.input(): 
-#         temp.append(f)
-    
-#     df = pd.DataFrame(temp)
-#     df = df.rename(columns = {df.columns[0]:'text'})
-#     df['text'] = df['text'].str.replace('\n', '')
-#     df = df[['text']][1:]
-#     x = df['text']
-#     return x
-
-# x_test = load_hacker_rank_input()
-
-# x_test_vectorized = vectorize_testing_data(x_test, vectorizer)
-
-# for line in model.predict(x_test_vectorized):
-#     print(line)
-
-
-
